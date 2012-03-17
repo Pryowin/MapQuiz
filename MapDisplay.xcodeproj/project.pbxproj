@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		538D1A36151546100044984E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538D1A35151546100044984E /* UIKit.framework */; };
+		538D1A38151546100044984E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538D1A37151546100044984E /* Foundation.framework */; };
+		538D1A3A151546100044984E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538D1A39151546100044984E /* CoreGraphics.framework */; };
+		538D1A40151546100044984E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 538D1A3E151546100044984E /* InfoPlist.strings */; };
+		538D1A42151546100044984E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 538D1A41151546100044984E /* main.m */; };
+		538D1A46151546100044984E /* AFNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 538D1A45151546100044984E /* AFNAppDelegate.m */; };
+		538D1A49151546100044984E /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538D1A48151546100044984E /* AFNViewController.m */; };
+		538D1A4C151546100044984E /* AFNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538D1A4A151546100044984E /* AFNViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		538D1A31151546100044984E /* MapDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		538D1A35151546100044984E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		538D1A37151546100044984E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		538D1A39151546100044984E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		538D1A3D151546100044984E /* MapDisplay-Info.plist */ = {isa = PBXFileReference; path = "MapDisplay-Info.plist"; sourceTree = "<group>"; };
+		538D1A3F151546100044984E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		538D1A41151546100044984E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		538D1A43151546100044984E /* MapDisplay-Prefix.pch */ = {isa = PBXFileReference; path = "MapDisplay-Prefix.pch"; sourceTree = "<group>"; };
+		538D1A44151546100044984E /* AFNAppDelegate.h */ = {isa = PBXFileReference; path = AFNAppDelegate.h; sourceTree = "<group>"; };
+		538D1A45151546100044984E /* AFNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNAppDelegate.m; sourceTree = "<group>"; };
+		538D1A47151546100044984E /* AFNViewController.h */ = {isa = PBXFileReference; path = AFNViewController.h; sourceTree = "<group>"; };
+		538D1A48151546100044984E /* AFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
+		538D1A4B151546100044984E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFNViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		538D1A2E151546100044984E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538D1A36151546100044984E /* UIKit.framework in Frameworks */,
+				538D1A38151546100044984E /* Foundation.framework in Frameworks */,
+				538D1A3A151546100044984E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		538D1A26151546100044984E = {
+			isa = PBXGroup;
+			children = (
+				538D1A3B151546100044984E /* MapDisplay */,
+				538D1A34151546100044984E /* Frameworks */,
+				538D1A32151546100044984E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		538D1A32151546100044984E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				538D1A31151546100044984E /* MapDisplay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		538D1A34151546100044984E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538D1A35151546100044984E /* UIKit.framework */,
+				538D1A37151546100044984E /* Foundation.framework */,
+				538D1A39151546100044984E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		538D1A3B151546100044984E /* MapDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				538D1A44151546100044984E /* AFNAppDelegate.h */,
+				538D1A45151546100044984E /* AFNAppDelegate.m */,
+				538D1A47151546100044984E /* AFNViewController.h */,
+				538D1A48151546100044984E /* AFNViewController.m */,
+				538D1A4A151546100044984E /* AFNViewController.xib */,
+				538D1A3C151546100044984E /* Supporting Files */,
+			);
+			path = MapDisplay;
+			sourceTree = "<group>";
+		};
+		538D1A3C151546100044984E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				538D1A3D151546100044984E /* MapDisplay-Info.plist */,
+				538D1A3E151546100044984E /* InfoPlist.strings */,
+				538D1A41151546100044984E /* main.m */,
+				538D1A43151546100044984E /* MapDisplay-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		538D1A30151546100044984E /* MapDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 538D1A4F151546100044984E /* Build configuration list for PBXNativeTarget "MapDisplay" */;
+			buildPhases = (
+				538D1A2D151546100044984E /* Sources */,
+				538D1A2E151546100044984E /* Frameworks */,
+				538D1A2F151546100044984E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapDisplay;
+			productName = MapDisplay;
+			productReference = 538D1A31151546100044984E /* MapDisplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		538D1A28151546100044984E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AFN;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Copart;
+			};
+			buildConfigurationList = 538D1A2B151546100044984E /* Build configuration list for PBXProject "MapDisplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 538D1A26151546100044984E;
+			productRefGroup = 538D1A32151546100044984E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				538D1A30151546100044984E /* MapDisplay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		538D1A2F151546100044984E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538D1A40151546100044984E /* InfoPlist.strings in Resources */,
+				538D1A4C151546100044984E /* AFNViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		538D1A2D151546100044984E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538D1A42151546100044984E /* main.m in Sources */,
+				538D1A46151546100044984E /* AFNAppDelegate.m in Sources */,
+				538D1A49151546100044984E /* AFNViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		538D1A3E151546100044984E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				538D1A3F151546100044984E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		538D1A4A151546100044984E /* AFNViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				538D1A4B151546100044984E /* en */,
+			);
+			name = AFNViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		538D1A4D151546100044984E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		538D1A4E151546100044984E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		538D1A50151546100044984E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapDisplay/MapDisplay-Prefix.pch";
+				INFOPLIST_FILE = "MapDisplay/MapDisplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		538D1A51151546100044984E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapDisplay/MapDisplay-Prefix.pch";
+				INFOPLIST_FILE = "MapDisplay/MapDisplay-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		538D1A2B151546100044984E /* Build configuration list for PBXProject "MapDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				538D1A4D151546100044984E /* Debug */,
+				538D1A4E151546100044984E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		538D1A4F151546100044984E /* Build configuration list for PBXNativeTarget "MapDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				538D1A50151546100044984E /* Debug */,
+				538D1A51151546100044984E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 538D1A28151546100044984E /* Project object */;
+}
