@@ -15,6 +15,7 @@
 		538D1A46151546100044984E /* AFNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 538D1A45151546100044984E /* AFNAppDelegate.m */; };
 		538D1A49151546100044984E /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538D1A48151546100044984E /* AFNViewController.m */; };
 		538D1A4C151546100044984E /* AFNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538D1A4A151546100044984E /* AFNViewController.xib */; };
+		538D1A60151557B80044984E /* Map.svg in Resources */ = {isa = PBXBuildFile; fileRef = 538D1A5F151557B80044984E /* Map.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +23,16 @@
 		538D1A35151546100044984E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		538D1A37151546100044984E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		538D1A39151546100044984E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		538D1A3D151546100044984E /* MapDisplay-Info.plist */ = {isa = PBXFileReference; path = "MapDisplay-Info.plist"; sourceTree = "<group>"; };
+		538D1A3D151546100044984E /* MapDisplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapDisplay-Info.plist"; sourceTree = "<group>"; };
 		538D1A3F151546100044984E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		538D1A41151546100044984E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		538D1A43151546100044984E /* MapDisplay-Prefix.pch */ = {isa = PBXFileReference; path = "MapDisplay-Prefix.pch"; sourceTree = "<group>"; };
-		538D1A44151546100044984E /* AFNAppDelegate.h */ = {isa = PBXFileReference; path = AFNAppDelegate.h; sourceTree = "<group>"; };
+		538D1A43151546100044984E /* MapDisplay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapDisplay-Prefix.pch"; sourceTree = "<group>"; };
+		538D1A44151546100044984E /* AFNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNAppDelegate.h; sourceTree = "<group>"; };
 		538D1A45151546100044984E /* AFNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNAppDelegate.m; sourceTree = "<group>"; };
-		538D1A47151546100044984E /* AFNViewController.h */ = {isa = PBXFileReference; path = AFNViewController.h; sourceTree = "<group>"; };
+		538D1A47151546100044984E /* AFNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNViewController.h; sourceTree = "<group>"; };
 		538D1A48151546100044984E /* AFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
 		538D1A4B151546100044984E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFNViewController.xib; sourceTree = "<group>"; };
+		538D1A5F151557B80044984E /* Map.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Map.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 		538D1A3C151546100044984E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				538D1A5F151557B80044984E /* Map.svg */,
 				538D1A3D151546100044984E /* MapDisplay-Info.plist */,
 				538D1A3E151546100044984E /* InfoPlist.strings */,
 				538D1A41151546100044984E /* main.m */,
@@ -152,6 +155,7 @@
 			files = (
 				538D1A40151546100044984E /* InfoPlist.strings in Resources */,
 				538D1A4C151546100044984E /* AFNViewController.xib in Resources */,
+				538D1A60151557B80044984E /* Map.svg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

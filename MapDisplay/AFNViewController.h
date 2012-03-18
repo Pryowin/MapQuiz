@@ -10,4 +10,6 @@
 
 @interface AFNViewController : UIViewController
 
+@property(nonatomic, retain) IBOutlet UIWebView *webView;
+
 @end
