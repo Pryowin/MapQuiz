@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		530B2C2B151E343300F319D3 /* USA_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 530B2C2A151E343300F319D3 /* USA_check.png */; };
+		531A2C3B151E89D900A97E2C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 531A2C3A151E89D900A97E2C /* Settings.bundle */; };
+		537DC1BE151E492500365DF2 /* USA_Flag_Map_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 537DC1BD151E492500365DF2 /* USA_Flag_Map_114.png */; };
+		537DC1C1151E497500365DF2 /* USA_Flag_Map_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 537DC1C0151E497500365DF2 /* USA_Flag_Map_72.png */; };
+		538AB0CF1516AB88001C6CD4 /* MapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 538AB0CE1516AB88001C6CD4 /* MapData.m */; };
+		538AB0D31516EDCA001C6CD4 /* States.xml in Resources */ = {isa = PBXBuildFile; fileRef = 538AB0D21516EDCA001C6CD4 /* States.xml */; };
 		538D1A36151546100044984E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538D1A35151546100044984E /* UIKit.framework */; };
 		538D1A38151546100044984E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538D1A37151546100044984E /* Foundation.framework */; };
 		538D1A3A151546100044984E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538D1A39151546100044984E /* CoreGraphics.framework */; };
@@ -15,10 +21,18 @@
 		538D1A46151546100044984E /* AFNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 538D1A45151546100044984E /* AFNAppDelegate.m */; };
 		538D1A49151546100044984E /* AFNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538D1A48151546100044984E /* AFNViewController.m */; };
 		538D1A4C151546100044984E /* AFNViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538D1A4A151546100044984E /* AFNViewController.xib */; };
-		538D1A60151557B80044984E /* Map.svg in Resources */ = {isa = PBXBuildFile; fileRef = 538D1A5F151557B80044984E /* Map.svg */; };
+		53DB9D5B1518285600D4020E /* Map.svg in Resources */ = {isa = PBXBuildFile; fileRef = 53DB9D5A1518285600D4020E /* Map.svg */; };
+		53DB9D5E15182E4D00D4020E /* AFNGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DB9D5D15182E4D00D4020E /* AFNGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530B2C2A151E343300F319D3 /* USA_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USA_check.png; sourceTree = "<group>"; };
+		531A2C3A151E89D900A97E2C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		537DC1BD151E492500365DF2 /* USA_Flag_Map_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = USA_Flag_Map_114.png; path = ../USA_Flag_Map_114.png; sourceTree = "<group>"; };
+		537DC1C0151E497500365DF2 /* USA_Flag_Map_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = USA_Flag_Map_72.png; path = ../USA_Flag_Map_72.png; sourceTree = "<group>"; };
+		538AB0CD1516AB88001C6CD4 /* MapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapData.h; path = ../MapData.h; sourceTree = "<group>"; };
+		538AB0CE1516AB88001C6CD4 /* MapData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapData.m; path = ../MapData.m; sourceTree = "<group>"; };
+		538AB0D21516EDCA001C6CD4 /* States.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = States.xml; sourceTree = "<group>"; };
 		538D1A31151546100044984E /* MapDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		538D1A35151546100044984E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		538D1A37151546100044984E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -32,7 +46,9 @@
 		538D1A47151546100044984E /* AFNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNViewController.h; sourceTree = "<group>"; };
 		538D1A48151546100044984E /* AFNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNViewController.m; sourceTree = "<group>"; };
 		538D1A4B151546100044984E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/AFNViewController.xib; sourceTree = "<group>"; };
-		538D1A5F151557B80044984E /* Map.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Map.svg; sourceTree = "<group>"; };
+		53DB9D5A1518285600D4020E /* Map.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Map.svg; sourceTree = "<group>"; };
+		53DB9D5C15182E4D00D4020E /* AFNGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNGame.h; sourceTree = "<group>"; };
+		53DB9D5D15182E4D00D4020E /* AFNGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +95,17 @@
 		538D1A3B151546100044984E /* MapDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				538AB0CD1516AB88001C6CD4 /* MapData.h */,
+				538AB0CE1516AB88001C6CD4 /* MapData.m */,
+				53DB9D5C15182E4D00D4020E /* AFNGame.h */,
+				53DB9D5D15182E4D00D4020E /* AFNGame.m */,
 				538D1A44151546100044984E /* AFNAppDelegate.h */,
 				538D1A45151546100044984E /* AFNAppDelegate.m */,
 				538D1A47151546100044984E /* AFNViewController.h */,
 				538D1A48151546100044984E /* AFNViewController.m */,
 				538D1A4A151546100044984E /* AFNViewController.xib */,
 				538D1A3C151546100044984E /* Supporting Files */,
+				531A2C3A151E89D900A97E2C /* Settings.bundle */,
 			);
 			path = MapDisplay;
 			sourceTree = "<group>";
@@ -92,11 +113,15 @@
 		538D1A3C151546100044984E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				538D1A5F151557B80044984E /* Map.svg */,
+				530B2C2A151E343300F319D3 /* USA_check.png */,
+				53DB9D5A1518285600D4020E /* Map.svg */,
+				538AB0D21516EDCA001C6CD4 /* States.xml */,
 				538D1A3D151546100044984E /* MapDisplay-Info.plist */,
 				538D1A3E151546100044984E /* InfoPlist.strings */,
 				538D1A41151546100044984E /* main.m */,
 				538D1A43151546100044984E /* MapDisplay-Prefix.pch */,
+				537DC1C0151E497500365DF2 /* USA_Flag_Map_72.png */,
+				537DC1BD151E492500365DF2 /* USA_Flag_Map_114.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -155,7 +180,12 @@
 			files = (
 				538D1A40151546100044984E /* InfoPlist.strings in Resources */,
 				538D1A4C151546100044984E /* AFNViewController.xib in Resources */,
-				538D1A60151557B80044984E /* Map.svg in Resources */,
+				538AB0D31516EDCA001C6CD4 /* States.xml in Resources */,
+				53DB9D5B1518285600D4020E /* Map.svg in Resources */,
+				530B2C2B151E343300F319D3 /* USA_check.png in Resources */,
+				537DC1BE151E492500365DF2 /* USA_Flag_Map_114.png in Resources */,
+				537DC1C1151E497500365DF2 /* USA_Flag_Map_72.png in Resources */,
+				531A2C3B151E89D900A97E2C /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +199,8 @@
 				538D1A42151546100044984E /* main.m in Sources */,
 				538D1A46151546100044984E /* AFNAppDelegate.m in Sources */,
 				538D1A49151546100044984E /* AFNViewController.m in Sources */,
+				538AB0CF1516AB88001C6CD4 /* MapData.m in Sources */,
+				53DB9D5E15182E4D00D4020E /* AFNGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +280,7 @@
 				GCC_PREFIX_HEADER = "MapDisplay/MapDisplay-Prefix.pch";
 				INFOPLIST_FILE = "MapDisplay/MapDisplay-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -259,6 +292,7 @@
 				GCC_PREFIX_HEADER = "MapDisplay/MapDisplay-Prefix.pch";
 				INFOPLIST_FILE = "MapDisplay/MapDisplay-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -282,6 +316,7 @@
 				538D1A51151546100044984E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
