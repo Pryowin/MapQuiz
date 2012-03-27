@@ -36,7 +36,7 @@
     self.stateIsColoured = NO;
     
     // Load SVG from file
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"map" ofType:@"svg"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Map" ofType:@"svg"];
     self.svgData = [NSMutableData dataWithContentsOfFile:filePath];
     self.path = filePath;
     

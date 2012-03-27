@@ -8,6 +8,8 @@
 
 #import "AFNGame.h"
 
+#define kDefaultTurns 10;
+
 @implementation AFNGame
 {
    
@@ -29,6 +31,8 @@ NSMutableArray *previousAnswers;
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     maxTurns = [defaults integerForKey:@"Turns"];
+    if (maxTurns == 0)
+        maxTurns = kDefaultTurns;
     previousAnswers = [[NSMutableArray alloc] initWithCapacity:maxTurns];
     
     return self;
