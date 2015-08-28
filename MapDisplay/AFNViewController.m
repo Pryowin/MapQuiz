@@ -22,13 +22,13 @@
 {
     NSArray * gameTypeLabel;
 }
-@synthesize startButton;
-@synthesize nextButton;
+
 @synthesize start;
 @synthesize scoreDisplay;
 @synthesize gameLabel;
 @synthesize answerEntry;
 @synthesize checkMark;
+@synthesize passButton;
 @synthesize webView;
 
 MapData *stateMap;
@@ -47,13 +47,12 @@ NSTimer *timer;
 
 - (void)viewDidUnload
 {
-    [self setStartButton:nil];
-    [self setNextButton:nil];
     [self setStart:nil];
     [self setScoreDisplay:nil];
     [self setGameLabel:nil];
     [self setAnswerEntry:nil];
     [self setCheckMark:nil];
+    [self setPassButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -80,12 +79,20 @@ NSTimer *timer;
     game = nil;
     game = [[AFNGame alloc] initWithType:[sender tag]];
     gameLabel.text = [gameTypeLabel objectAtIndex:game.type];
-    [self.nextButton setEnabled:YES];
+    [self.passButton setEnabled:YES];
     [answerEntry setHidden:NO];
+
     if (game.type == stateAbbrev){
         answerEntry.autocapitalizationType=UITextAutocapitalizationTypeAllCharacters;
     } else {
         answerEntry.autocapitalizationType = UITextAutocapitalizationTypeWords;
+    }
+    
+    // Determine if text box should offer suggestions or not
+    if (game.autoCorrectIsDisabled){
+        answerEntry.autocorrectionType = UITextAutocorrectionTypeNo;
+    } else {
+        answerEntry.autocorrectionType = UITextAutocorrectionTypeYes;
     }
     
     [self pickNextState];
@@ -93,10 +100,20 @@ NSTimer *timer;
 
 - (IBAction)guessMade:(id)sender 
 {
-    UITextField *guessTextField = (UITextField *)sender;
-    [guessTextField  resignFirstResponder];
-    // Convert guess to uppercase and trim any spaces or newline characters
-    NSString *guess = [[guessTextField.text uppercaseString] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *guess;
+    NSString *alertTitle;
+    UITextField *guessTextField;
+    // If initiated from textfield use contents, otherwise user has passed and guess is blank
+    if ([sender isMemberOfClass:[UITextField class]]) {
+        guessTextField = (UITextField *)sender;
+        [guessTextField  resignFirstResponder];
+        // Convert guess to uppercase and trim any spaces or newline characters
+        guess = [[guessTextField.text uppercaseString] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        alertTitle = @"WRONG";
+    } else {
+        alertTitle = @"You Passed";
+        guess = @"";
+    }
     
     NSArray *answerArray;
     // Select array that holds the answer for the type of game
@@ -123,7 +140,7 @@ NSTimer *timer;
         [NSTimer scheduledTimerWithTimeInterval:kCheckTimer target:self selector:@selector(timerFireMethod:) userInfo:nil repeats:NO];
     } else {
         NSString *msg =[[NSString alloc] initWithFormat:@"The Correct Answer is %@",answer];
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WRONG" message:msg delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:alertTitle message:msg delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alert show];
     }
     guessTextField.text=@"";
@@ -164,9 +181,14 @@ NSTimer *timer;
     for (UIButton *button in start) {
         [button setHidden:NO];
     }
+    [self.passButton setEnabled:NO];
     [self showScore];
     [stateMap colourState:NO];
     [self showMap];
     [answerEntry setEnabled:NO];
+    NSString *msg = [[NSString alloc] initWithFormat:@"You scored %i/%i",game.score,game.turn];
+    scoreDisplay.text = @"";
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:msg delegate:self cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
 }
 @end

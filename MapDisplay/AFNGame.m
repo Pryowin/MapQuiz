@@ -18,6 +18,7 @@
 @synthesize turn;
 @synthesize score;
 @synthesize type;
+@synthesize autoCorrectIsDisabled;
 
 NSUInteger maxTurns;
 NSMutableArray *previousAnswers;
@@ -35,6 +36,8 @@ NSMutableArray *previousAnswers;
         maxTurns = kDefaultTurns;
     previousAnswers = [[NSMutableArray alloc] initWithCapacity:maxTurns];
     
+    autoCorrectIsDisabled = [defaults boolForKey:@"autoCorrectIsDisabled"];
+                            
     return self;
 }
 

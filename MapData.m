@@ -60,6 +60,7 @@
 {
     NSString *state = [self.stateAbbreviations objectAtIndex:self.currentState];
     // Use red unless method has been asked to set back to grey
+
     
     char *colour;
     if (!setColour) {
@@ -83,6 +84,18 @@
             [self.svgData replaceBytesInRange:NSMakeRange(fill.location+fill.length, kLengthofColourString) withBytes:colour length:kLengthofColourString];
        
         } 
+        // Special processing to handle other part of Michigan
+        if([state isEqualToString:@"MI"]){
+            NSString *statePart2 = [[NSString alloc] initWithString:@"XX-"];
+            NSRange stateRangePart2 = [self.svgData rangeOfData:[statePart2 dataUsingEncoding:NSUTF8StringEncoding] options:0 range:rangeofSearch];
+            if(stateRangePart2.location != NSNotFound){
+                NSRange fill = [self.svgData rangeOfData:[kFillText dataUsingEncoding:NSUTF8StringEncoding] options:0 range:NSMakeRange(stateRangePart2.location, 200)];
+                if (fill.location != NSNotFound){
+                    [self.svgData replaceBytesInRange:NSMakeRange(fill.location+fill.length, kLengthofColourString) withBytes:colour length:kLengthofColourString];
+                }
+            }
+        }
+            
     }
     
 }

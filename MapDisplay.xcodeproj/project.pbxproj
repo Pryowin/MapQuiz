@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		530B2C2B151E343300F319D3 /* USA_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 530B2C2A151E343300F319D3 /* USA_check.png */; };
 		531A2C3B151E89D900A97E2C /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 531A2C3A151E89D900A97E2C /* Settings.bundle */; };
+		531A2C3E152413AD00A97E2C /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 531A2C3C1524132E00A97E2C /* Default-Landscape~ipad.png */; };
 		537DC1BE151E492500365DF2 /* USA_Flag_Map_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 537DC1BD151E492500365DF2 /* USA_Flag_Map_114.png */; };
 		537DC1C1151E497500365DF2 /* USA_Flag_Map_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 537DC1C0151E497500365DF2 /* USA_Flag_Map_72.png */; };
 		538AB0CF1516AB88001C6CD4 /* MapData.m in Sources */ = {isa = PBXBuildFile; fileRef = 538AB0CE1516AB88001C6CD4 /* MapData.m */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		530B2C2A151E343300F319D3 /* USA_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = USA_check.png; sourceTree = "<group>"; };
 		531A2C3A151E89D900A97E2C /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		531A2C3C1524132E00A97E2C /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		537DC1BD151E492500365DF2 /* USA_Flag_Map_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = USA_Flag_Map_114.png; path = ../USA_Flag_Map_114.png; sourceTree = "<group>"; };
 		537DC1C0151E497500365DF2 /* USA_Flag_Map_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = USA_Flag_Map_72.png; path = ../USA_Flag_Map_72.png; sourceTree = "<group>"; };
 		538AB0CD1516AB88001C6CD4 /* MapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapData.h; path = ../MapData.h; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		538D1A26151546100044984E = {
 			isa = PBXGroup;
 			children = (
+				531A2C3C1524132E00A97E2C /* Default-Landscape~ipad.png */,
 				538D1A3B151546100044984E /* MapDisplay */,
 				538D1A34151546100044984E /* Frameworks */,
 				538D1A32151546100044984E /* Products */,
@@ -186,6 +189,7 @@
 				537DC1BE151E492500365DF2 /* USA_Flag_Map_114.png in Resources */,
 				537DC1C1151E497500365DF2 /* USA_Flag_Map_72.png in Resources */,
 				531A2C3B151E89D900A97E2C /* Settings.bundle in Resources */,
+				531A2C3E152413AD00A97E2C /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

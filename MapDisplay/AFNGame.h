@@ -19,6 +19,7 @@ typedef enum{
 @property (nonatomic) NSUInteger score;
 @property (nonatomic) NSUInteger turn;
 @property (nonatomic) GameType type;
+@property (nonatomic) BOOL autoCorrectIsDisabled;
 
 -(BOOL) gameIsOver;
 -(id) initWithType: (GameType)type;
